@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wordle for Dummies</title>
+  <meta name="description" content="Five letters. Six chances. Surely you've got this. A very unserious word guessing game.">
+  <meta property="og:title" content="Wordle for Dummies"><meta property="og:description" content="Five letters. Six chances. Questionable odds."><meta property="og:type" content="website">
+  <meta name="theme-color" content="#202b42">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b5efa0'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial' font-weight='900' font-size='44' fill='%23202b42'%3EW%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script type="module" src="script.js"></script>
+</head>
+<body>
+  <header><a href="./" class="brand"><span class="logo" aria-hidden="true">W</span><span>Dumb Little Internet</span></a><span class="edition">AN EXERCISE IN OVERTHINKING</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">FIVE LETTERS. SIX CHANCES.</p><h1>Wordle for <span>Dummies.</span></h1><p>Surely you’ve got this.</p></div>
+    <section class="game" aria-label="Word guessing game">
+      <div class="board-heading"><span>MAKE AN EDUCATED GUESS</span><span id="attempt">01 / 06</span></div>
+      <div id="board" class="board" role="group" aria-label="Six guesses of five letters"></div>
+      <div class="legend" aria-label="Tile colors"><span><i class="correct"></i>Right spot</span><span><i class="present"></i>Wrong spot</span><span><i class="absent"></i>Not in word</span></div>
+      <div class="feedback"><p id="message" role="status" aria-live="polite" aria-atomic="true">Type five letters, then press Enter.</p><button id="again" hidden>Play again <span aria-hidden="true">↗</span></button></div>
+      <div id="keyboard" class="keyboard" role="group" aria-label="On-screen keyboard"></div>
+      <p class="input-note">Five-letter words only. Confidence optional.</p>
+    </section>
+    <noscript>Enable JavaScript to play this word guessing game.</noscript>
+  </main>
+  <footer><span>A Dumb Little Internet experiment.</span><span>Same energy. Every single day.</span></footer>
+</body>
+</html>
